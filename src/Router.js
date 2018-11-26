@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { NavBar } from "antd-mobile";
 
 class Home extends Component {
@@ -8,6 +8,7 @@ class Home extends Component {
   }
 
   render() {
+    npm;
     return (
       <>
         <NavBar>首 页</NavBar>
