@@ -11,7 +11,6 @@ class Home extends Component {
     return (
       <>
         <NavBar>首 页</NavBar>
-        <NavBar>首 页</NavBar>
       </>
     );
   }

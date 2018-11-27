@@ -1,21 +1,15 @@
-import React, { Component, Fragment } from "react";
-import { NavBar } from "antd-mobile";
+import React from "react";
+import { HashRouter, Switch, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import GoodDetail from './pages/GoodDetail'
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const BasicRoute = () => (
+  <HashRouter>
+    <Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/GoodDetail' component={GoodDetail} />
+    </Switch>
+  </HashRouter>
+)
 
-  render() {
-    npm;
-    return (
-      <>
-        <NavBar>首 页</NavBar>
-        <NavBar>首 页</NavBar>
-      </>
-    );
-  }
-}
-
-export default Home;
+export default BasicRoute;
